@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doomed Cities</title>
+    <link href="doomed_cities.css" rel="stylesheet">
+</head>
+<body>
+<h2>Doomed Cities</h2>
+
+<p>Click the button and enter 5 cities. JavaScript will generate a table.</p>
+<button id="start">Start</button>
+<div id="app"></div>
+
+<script src="doomed_cities.js"></script>
+</body>
+</html>
