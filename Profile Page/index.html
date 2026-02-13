@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lily Doty Profile Page</title>
 </head>
 <body>
-    <p>This is a test.</p>
+    <header>
+        <h1>Lily Doty</h1>
+        <p>My name is Lily Doty. I live in Beecher City, IL. I am a freshman at Lake Land College 
+           majoring in IT-Programming. After I finish school, I hope to get a job as a software 
+           developer.</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a><br>
+        <a href="#skills">Skills</a><br>
+        <a href="#projects">Projects</a><br>
+        <a href="#contact">Contact Me</a><br>
+        <a href="https://github.com/Ldoty07">My GitHub Page</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile_picture.jpg" width="480" height="640" alt="Picture of Lily">
+            <p>Hello! My name is Lily Doty.I am 18 years old and am currently attending Lake Land 
+               College in Mattoon, IL. I live in Beecher City, IL and have five siblings. I was born 
+               in China and was adopted when I was eight months old. One of my siblings was also 
+               adopted from China and two of my siblings were adopted from Colombia.</p>
+            <p>I graduated as valedictorian from Beecher City High School in May of 2025. Now, I am 
+               majoring in IT-Programming at Lake Land. When I finish, I am going to transfer to 
+               Eastern Illinois University for my bachelor's degree.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Problem-Solving</li>
+                <li>Time Management</li>
+                <li>Adaptability</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>This is a placeholder for Project 1.</h3>
+            </article>
+            <article>
+                <h3>This is a placeholder for Project 2.</h3>
+            </article>
+        </section>
+        <section id="contact">
+            <form>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required minlength="2"><br>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required><br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required minlength="10"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr><small><i>Copyright &copy; 2026 Lily Doty<br>
+        <a href="https://bsky.app/profile/thebookwyrm25.bsky.social">My Bluesky</a></i></small>
+    </footer>
 </body>
 </html>
