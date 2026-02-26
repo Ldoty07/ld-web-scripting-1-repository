@@ -1,0 +1,131 @@
+:root {
+    --max: 60rem;
+    --space1: 0.5rem;
+    --space2: 1rem;
+    --space3: 2rem;
+    --background-color-light: #bdb7b5;
+    --background-color-dark: #132127;
+    --text-dark: #09120f;
+    --text-light: #f1e5e1;
+    --shadow: 4px 4px 4px #286c5c;
+    --border: 2px solid #36545f;
+}
+
+main {
+    max-width: var(--max);
+    padding: var(--space1);
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+nav {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    padding-top: var(--space1);
+    padding-bottom: var(--space1);
+    padding-left: var(--space2);
+    padding-right: var(--space2);
+    width: 100%;
+    border-bottom: var(--border);
+}
+
+main p {
+    padding: var(--space2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    background-color: #192b32;
+    padding: var(--space2);
+    color: var(--text-light);
+}
+
+h2 {
+    font-size: 1.8rem;
+    padding: var(--space1);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #5dad93;
+    padding: var(--space1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: var(--shadow);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: var(--space2);
+    border-top: var(--border);
+    background-color: var(--background-color-dark);
+    color: var(--text-light);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.embed {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.embed iframe {
+    width: 60%;
+    height: 80%;
+    border: 0;
+    box-shadow: var(--shadow);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space1);
+    padding-bottom: var(--space2);
+    width: 30%;
+}
+
+.btn {
+    width: 20%;
+    background-color: #b1a4a0;
+}
+
+.project {
+    background-color: var(--background-color-dark);
+    color: var(--text-light);
+    padding-left: var(--space3);
+    padding-right: var(--space3);
+    padding-bottom: var(--space1);
+    padding-top: var(--space1);
+}
+
+.skills {
+    padding: var(--space3);
+    padding-top: var(--space1);
+}
