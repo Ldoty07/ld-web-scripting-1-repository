@@ -1,6 +1,6 @@
 This is the repository I will be using for my Web Scripting 1 assignments.
 
-The website has been updated. It has a little bit about me and there is now CSS, but it is still a work in progress.
+The website has been updated. It has a little bit about me and I added CSS, but it is still a work in progress.
 
 Pages:
     index.html (Home)
@@ -8,4 +8,4 @@ Pages:
     projects.html (Projects)
     contact.html (Contact Me)
 
-<img width="2560" height="1040" alt="Screenshot of Profile Page" src="Images/website_screenshot.PNG">
+![Screenshot of website](Profile_Page/Images/website_screenshot.PNG)
