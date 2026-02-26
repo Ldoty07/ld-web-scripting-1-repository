@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lily Doty | Contact Me</title>
+    <link href="../Stylesheet/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="https://github.com/Ldoty07">My GitHub Page</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form class="form">
+            <label for="name">Name:</label><br>
+            <input id="name" name="name" type="text" required minlength="2"><br>
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" type="email" required><br>
+            <label for="topic">Topic:</label><br>
+            <select id="topic" name="topic" required>
+                <option value="question">Question</option>
+                <option value="request">Request</option>
+                <option value="reach_out">Reach Out</option>
+            </select>
+            <fieldset>
+                <legend>Preferred Contact</legend>
+                <label for="email">Email</label>
+                <input type="radio" id="email" name="preferred_contact" value="Email"><br>
+                <label for="phone">Phone</label>
+                <input type="radio" id="phone" name="preferred_contact" value="Phone"><br>
+                <label for="social_media">Social Media</label>
+                <input type="radio" id="social_media" name="preferred_contact" value="Social Media"><br>
+            </fieldset>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required minlength="10"></textarea><br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        Copyright &copy; 2026 Lily Doty<br>
+        <a href="https://bsky.app/profile/thebookwyrm25.bsky.social">My Bluesky</a>
+    </footer>
+</body>
+</html>
