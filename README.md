@@ -1,6 +1,6 @@
 This is the repository I will be using for my Web Scripting 1 assignments.
 
-The website has been updated. It has a little bit about me, I added CSS, and I added the landing page.
+The website has been updated. It has a little bit about me, I added CSS, and I added the landing page. There is also a toggleable dark/light mode for the landing page.
 
 Pages:
     index.html (Landing Page)

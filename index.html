@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <title>Lily Doty</title>
@@ -9,15 +9,14 @@
     <div class="container">
     <nav class="nav">
         <a class="brand">Lily Doty</a>
-        <div class="links">
-            <a href="Profile_Page/Pages/about.html">About</a>
-            <a href="Profile_Page/Pages/projects.html">Projects</a>
-            <a href="Profile_Page/Pages/contact.html">Contact</a>
-        </div>
+        <a href="Profile_Page/Pages/about.html">About</a>
+        <a href="Profile_Page/Pages/projects.html">Projects</a>
+        <a href="Profile_Page/Pages/contact.html">Contact</a>
+        <button class="btn" id="themeToggle" type="button" onclick="themeToggle()">Toggle theme</button>
     </nav>
     <main>
         <div class="hero">
-            <img src="Profile_Page/Images/profile_picture.jpeg" alt="Picture of Lily at FBLA Nationals">
+            <img class="fade_in" src="Profile_Page/Images/profile_picture.jpeg" alt="Picture of Lily at FBLA Nationals">
             <div class="row">
                 <div class="column">
                     <p>
@@ -91,5 +90,13 @@
         <a href="ldoty2025@icloud.com">ldoty2025@icloud.com</a>
     </footer>
     </div>
+
+    <script>
+        function themeToggle() {
+            const body = document.body;
+            body.classList.toggle("dark_mode");
+        }
+    </script>
+
 </body>
 </html>
