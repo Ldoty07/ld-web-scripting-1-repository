@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>My To Do List</h1>
+        <input id="taskInput" placeholder="New task" required>
+        <select id="tagSelect">
+            <option value="None">None</option>
+            <option value="School">School</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+        </select>
+        <button class ="btn" id="addBtn">Add</button>
+        <ul id="taskList"></ul>
+        <p id="counter"></p>
+        <p>Filter by:</p>
+        <div id="filter">
+            <button class="btn" id="filterAll">All</button>
+            <button class="btn" id="filterActive">Active</button>
+            <button class="btn" id="filterComplete">Complete</button>
+            <button class="btn" id="filterSchool">School</button>
+            <button class="btn" id="filterWork">Work</button>
+            <button class="btn" id="filterPersonal">Personal</button>
+        </div>
+        <button class="btn" id="clearBtn">Clear All</button>
+
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>

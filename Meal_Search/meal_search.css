@@ -1,0 +1,43 @@
+:root {
+    --max: 80rem;
+    --bg: #eae0d5;
+    --text-color: #0a0908;
+    --border: #d0b699;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-color);
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+#container {
+    max-width: var(--max)s;
+}
+
+#searchInput {
+    padding: 0.3rem;
+    background-color: #fdf7ef;
+}
+
+.btn {
+    padding: 0.3rem;
+    background-color: #fdf7ef;
+}
+
+.btn:hover {
+    background-color: #f8e6d2;
+}
+
+#results .card {
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 2rem;
+}

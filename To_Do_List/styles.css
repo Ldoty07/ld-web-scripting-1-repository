@@ -1,0 +1,85 @@
+:root {
+    --max: 80rem;
+    --bg: #091210;
+    --text-color: #f2edeb;
+    --li-bg: #e8c8bf;
+    --li-text-color: #0a1b17;
+    --border: #272e39;
+    --btn-color: rgb(246, 246, 234);
+    --btn-hover: rgb(209, 209, 187);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-color);
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+#taskInput {
+    width: 30%;
+    padding: 0.3rem;
+    background-color: var(--btn-color);
+}
+
+#tags {
+    padding: 0.3rem;
+    background-color: var(--btn-color);
+}
+
+#taskList li {
+    list-style-type: none;
+    border: 2px solid var(--border);
+    background-color: var(--li-bg);
+    color: var(--li-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.4rem;
+    width: 95%;
+}
+
+#taskList li:hover {
+    background-color: #d9b1a6;
+}
+
+#taskList li.checked {
+    text-decoration: line-through;
+}
+
+#filter {
+    padding-bottom: 1rem;
+}
+
+#tagSelect {
+    width: 5.5rem;
+    padding: 0.3rem;
+    background-color: var(--btn-color);
+}
+
+.container {
+    max-width: var(--max);
+}
+
+.btn {
+    padding: 0.3rem;
+    background-color: var(--btn-color);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.hidden {
+    display: none;
+}
+
+.completeBtn {
+    margin-right: 0.3rem;
+}
