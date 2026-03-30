@@ -6,7 +6,7 @@ const results = document.querySelector("#results");
 searchBtn.addEventListener("click", runSearch);
 
 async function runSearch() {
-    searchTerm = searchInput.value.trim();
+    const searchTerm = searchInput.value.trim();
 
     if (!searchTerm) {
         searchStatus.textContent = "Please enter a search term.";
@@ -28,22 +28,25 @@ async function runSearch() {
 
         const data = await response.json();
         console.log(data);
+
+        if (!data.meals) {
+            searchStatus.textContent = "No results found.";
+        } else {
+            searchStatus.textContent = `Found ${data.meals.length} result(s).`;
+            results.innerHTML = data.meals.map(meal => `  
+                <div class="card">
+                <h3>${meal.strMeal}</h3>
+                <p><strong>Category:</strong> ${meal.strCategory}</p>
+                <p><strong>Area:</strong> ${meal.strArea}</p>
+                <img src="${meal.strMealThumb}" alt="${meal.strMeal}" width="200" />
+            </div>`).join("");
+        }
+        
     } catch (error) {
         searchStatus.textContent = "Something went wrong. Please try again.";
         console.error(error);
     }
+
+    
 }
 
-if (!data.meals) {
-    searchStatus.textContent = "No results found.";
-    return;
-}
-
-searchStatus.textContent = `Found ${data.meals.length} result(s).`;
-results.innerHTML = data.meals.map(meal => `  
-    <div class="card">
-    <h3>${meal.strMeal}</h3>
-    <p><strong>Category:</strong> ${meal.strCategory}</p>
-    <p><strong>Area:</strong> ${meal.strArea}</p>
-    <img src="${meal.strMealThumb}" alt="${meal.strMeal}" width="200" />
-  </div>`).join("");

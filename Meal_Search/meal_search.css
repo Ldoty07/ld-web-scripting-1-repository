@@ -36,8 +36,20 @@ h1 {
     background-color: #f8e6d2;
 }
 
-#results .card {
-    border: 1px solid var(--border);
+.card {
+    box-sizing: border-box;
+    border: 3px solid var(--border);
     border-radius: 0.75rem;
     padding: 2rem;
+    width: 50%;
+    margin-left: 20rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-6px);
 }
