@@ -1,0 +1,106 @@
+:root {
+    --max: 80rem;
+    --bg: #eae0d5;
+    --text-color: #0a0908;
+    --border: #d0b699;
+    --btn: #fdf7ef;
+    --btn-hover: #fbeddd;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-color);
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2rem;
+}
+
+#container {
+    max-width: var(--max);
+}
+
+.btn {
+    padding: 0.3rem;
+    background-color: var(--btn);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+#songInput {
+    background-color: var(--btn);
+    padding: 0.3rem;
+    width: 17rem;
+}
+
+#artistInput {
+    background-color: var(--btn);
+    padding: 0.3rem;
+    width: 10rem;
+}
+
+#genreSelect {
+    background-color: var(--btn);
+    padding: 0.4rem;
+}
+
+#statusMsg {
+    padding: 1rem;
+}
+
+#songList li {
+    list-style-type: none;
+    border: 2px solid var(--border);
+    justify-content: space-between;
+    width: 72rem;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--btn);
+    font-family: Bradley Hand, cursive;
+    padding-top: 0.7rem;
+}
+
+#songList li:hover {
+    background-color: var(--btn-hover);
+}
+
+#delBtn {
+    margin-bottom: 0.3rem;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 73rem;
+    margin-left: 2.5rem;
+}
+
+#filterDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+#filterDiv select {
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    height: 2rem;
+}
+
+#filterBtn {
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    height: 2rem;
+}
+
+#genreFilter {
+    background-color: var(--btn);
+    padding: 0.4rem;
+}

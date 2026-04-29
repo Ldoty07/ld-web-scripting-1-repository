@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist Builder</title>
+    <link href="playlist_builder.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>My Playlist</h1>
+        <input id="songInput" placeholder="Enter song name" required>
+        <input id="artistInput" placeholder="Enter artist" required>
+        <select id="genreSelect">
+            <option value="Other">Other</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="EDM">EDM</option>
+            <option value="Country">Country</option>
+        </select>
+        <button class="btn" id="addBtn">Add</button>
+        <p id="statusMsg"></p>
+        <ul id="songList"></ul>
+        <div id="bottom">
+            <p id="listTotal">Playlist Length: 0</p> 
+            <div id="filterDiv"> 
+                <p>Filter by:</p>
+                <select id="genreFilter">
+                    <option value="All">All</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Country">Country</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button class="btn" id="filterBtn">Filter</button>
+            </div> 
+        </div>
+        <button class="btn" id="clearBtn">Clear All</button>
+    </div>
+    
+    <script src="playlist_builder.js"></script>
+</body>
+</html>
